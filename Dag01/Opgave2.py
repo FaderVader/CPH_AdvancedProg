@@ -2,13 +2,18 @@
 
 # Setup
 numberStack = []
-newNumber = True
+userInput = True
+LINE_WIDTH = 40
+LAST_IN_STACK = -1
+SECONDLAST_IN_STACK = -2
 allowedOperators = ('+', '-', '*', '/')
+header = '+---------------- stack ---------------+'
 
 # define functions
 def AddNumberToStack(number):
-    actualNumber = int(number)
+    actualNumber = float(number)
     numberStack.append(actualNumber)
+    return
 
 
 def PerformOperation(operator):
@@ -16,12 +21,12 @@ def PerformOperation(operator):
         return 
 
     if len(numberStack) < 2:
-        valueA = numberStack[-1]
+        valueA = numberStack[LAST_IN_STACK]
         AddNumberToStack(valueA)
         return valueA
 
-    valueA = numberStack[-1]
-    valueB = numberStack[-2]
+    valueA = numberStack[LAST_IN_STACK]
+    valueB = numberStack[SECONDLAST_IN_STACK]
 
     if operator == '+':
         result = valueA + valueB
@@ -33,7 +38,7 @@ def PerformOperation(operator):
         result = valueA * valueB
 
     elif operator == '/':
-        result = valueA / valueB
+        result = valueB / valueA
 
     else:
         return
@@ -42,24 +47,36 @@ def PerformOperation(operator):
     return result
 
 
-def EvalOperator(argument):
+def EvalInput(argument):
     if argument in allowedOperators:
         result = PerformOperation(argument)
-        PrintStack(argument, result)
+        return result
     else:
         AddNumberToStack(argument)
 
 
-def PrintStack(operator, result):
-    print(f'The result of {operator} on the stack is: {result}')
+def BuildDisplayLine(operator, result):
+    if len(numberStack) == 0:
+        return '|'+ ' '*(LINE_WIDTH-2) + '|'
+
+    if len(numberStack) == 1:
+        stackDump = f'|{numberStack[LAST_IN_STACK]}'
+
     if len(numberStack) > 1:
-        print(f'Current stack: {numberStack[-1]}, {numberStack[-2]} ')
+        stackDump = f'|{numberStack[SECONDLAST_IN_STACK]}, {numberStack[LAST_IN_STACK]}'
+
+    padRepeatCount = LINE_WIDTH - (len(stackDump)+1) # +1 because eol char |
+    padding = ' '*padRepeatCount
+    completeLine = f'{stackDump}'+padding+'|' 
+    return completeLine
+
 
 # Main loop
-while newNumber:
-    newNumber = input("Number or operator: ")
+while userInput:
+    userInput = input(header + ' ')
 
-    if not newNumber:
+    if not userInput:
         break
 
-    EvalOperator(newNumber)
+    result = EvalInput(userInput)
+    header = BuildDisplayLine(userInput, result)
