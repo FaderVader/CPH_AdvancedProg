@@ -23,3 +23,7 @@ Hello Cruel World
 17:00 - ERROR - Hello Cruel World
 17:00 - INFO   - Hello World
 17:00 - ERROR  - Hello Cruel World
+17:03 - INFO   - Hello World
+17:03 - ERROR  - Hello Cruel World
+17:04 - INFO   - Hello World
+17:04 - ERROR  - Hello Cruel World

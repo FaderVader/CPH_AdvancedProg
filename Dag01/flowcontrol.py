@@ -22,3 +22,15 @@ print(message)
 # truthy
 print(False or "Value") # returns Value
 print("Yellow" in ["Blue", "Yellow"]) # prints True
+
+# try / except
+number = 0
+expectedNumber = input('Give me number>') 
+try:
+    number = int(expectedNumber)
+    print(number * number)
+    print(3.1456 / number)
+except ValueError:
+    print("Thats not a number!")
+except ZeroDivisionError:
+    print("number cannot be 0")

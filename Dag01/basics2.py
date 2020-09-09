@@ -1,6 +1,6 @@
-##################################
-# lists - ordered - unique items #
-##################################
+#######################################
+# lists - ordered - allows duplicates #
+#######################################
 list1 = ['alpha', 'beta', 'gamma']
 list2 = ['tree', 'beta', 'flower']
 
@@ -22,6 +22,10 @@ list3[2]='bird'
 list2 = tuple(list3)
 print(list2)
 print(list2.index('bird')) #2
+
+sentence = 'This is a sentence'
+words = sentence.split(' ')
+print(len(words)) # expect 4
 
 ##################################
 # set - unordered - unique items #
@@ -48,7 +52,10 @@ otherDict = dict(key1 = 'value1', two = 2, key3 = 'three')
 
 print(thisDict[2])
 print(thisDict['key'])
+
 value = thisDict.get('a')
+handleNotFound = thisDict.get('unknown', 'default') # if key not found, return fallback value
+
 print(value) # alfa
 thisDict[2] = 'gamma'
 for key in thisDict:
