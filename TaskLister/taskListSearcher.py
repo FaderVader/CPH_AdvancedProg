@@ -3,10 +3,6 @@ from csv import DictReader
 print('Search the list of services and processes. Choose:')
 userChoice = input('1: find service   - 2: find any ')
 
-# def ReadFile():
-#         with open('tasklist.csv') as t:
-#             return t
-
 # Search for service 
 def FindService():
     serviceSearchTerm = input("Service Search Term: ")

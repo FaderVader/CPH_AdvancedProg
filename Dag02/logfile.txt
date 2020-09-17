@@ -1,1 +1,5 @@
 Hello Cruel World
+12:54 - INFO   - Hello World
+12:54 - ERROR  - Hello Cruel World
+12:55 - INFO   - Hello World
+12:55 - ERROR  - Hello Cruel World

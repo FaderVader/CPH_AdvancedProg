@@ -1,29 +1,9 @@
-Hello Cruel World
-Hello World
-Hello Cruel World
-<class 'datetime.datetime'>INFOHello World
-<class 'datetime.datetime'>ERRORHello Cruel World
-16:55INFOHello World
-16:55ERRORHello Cruel World
-16:55 - INFO - Hello World
-16:55 - ERROR - Hello Cruel World
-16:57 - INFO - Hello World
-16:57 - ERROR - Hello Cruel World
-16:58 - INFO - Hello World
-16:58 - ERROR - Hello Cruel World
-16:59 - INFO -      Hello World
-16:59 - ERROR -     Hello Cruel World
-- 16:59 - INFO        Hello World
-- 16:59 - ERROR       Hello Cruel World
-17:00 - INFO         - Hello World
-17:00 - ERROR        - Hello Cruel World
-17:00 - INFO    - Hello World
-17:00 - ERROR   - Hello Cruel World
-17:00 - INFO - Hello World
-17:00 - ERROR - Hello Cruel World
-17:00 - INFO   - Hello World
-17:00 - ERROR  - Hello Cruel World
-17:03 - INFO   - Hello World
-17:03 - ERROR  - Hello Cruel World
-17:04 - INFO   - Hello World
-17:04 - ERROR  - Hello Cruel World
+13:05 - INFO   - Hello World
+13:05 - ERROR  - Hello Cruel World
+13:05 - SUCCES - Operation was a total succes, but the patient died
+18:43 - INFO   - Hello World
+18:43 - ERROR  - Hello Cruel World
+18:43 - SUCCES - Operation was a total succes, but the patient died
+18:08 - INFO   - Hello World
+18:08 - ERROR  - Hello Cruel World
+18:08 - SUCCES - Operation was a total succes, but the patient died

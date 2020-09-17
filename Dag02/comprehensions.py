@@ -1,3 +1,5 @@
+"https://python-3-patterns-idioms-test.readthedocs.io/en/latest/Comprehensions.html"
+
 output = [i for i in [0,1,2,3,4] if i % 2 == 0]
 # print(f'{type(output)}: {output}') # list: 0, 2, 4
 
