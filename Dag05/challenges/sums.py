@@ -1,3 +1,5 @@
+# https://realpython.com/python-practice-problems/
+
 my_ints = [1, 3, 6, 2, 2, 7, 10]
 
 mySum = 0
