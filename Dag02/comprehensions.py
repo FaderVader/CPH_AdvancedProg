@@ -12,7 +12,7 @@ output = {i: i % 2 for i in range(4)} # {i, i%2} = {key, value}
 loremIpsum = []
 sortedLorem = []
 sortedLoremDict = {}
-with open('loremipsum.txt') as f:
+with open('./dag02/loremipsum.txt') as f:
     for line in f:        
         loremIpsum = line.split()
         result = [len(word) for word in loremIpsum]

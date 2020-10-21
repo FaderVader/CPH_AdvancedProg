@@ -24,10 +24,3 @@ greeting = random.choice(greetings)
 print(greeting.__call__(name))
 # for greeting in greetings:
 #     print(greeting.__call__(name))
-
-
-# 1. Add another greeting
-
-# 2. Make all greetings take an name as input.
-
-

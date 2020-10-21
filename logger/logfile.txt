@@ -7,3 +7,6 @@
 18:08 - INFO   - Hello World
 18:08 - ERROR  - Hello Cruel World
 18:08 - SUCCES - Operation was a total succes, but the patient died
+19:03 - INFO   - Hello World
+19:03 - ERROR  - Hello Cruel World
+19:03 - SUCCES - Operation was a total succes, but the patient died

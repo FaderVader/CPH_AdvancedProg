@@ -23,8 +23,9 @@ def bubblesort(lst):
     return lst
 
 
-# if __name__ == "__main__":
-#     import doctest
-#     doctest.testmod()
-result = bubblesort([4, 3, 2, 1])
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+
+result = bubblesort([4, 3, 10, 2, 1])
 print(result)

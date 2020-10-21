@@ -32,8 +32,8 @@ def getPositives(numbers, acc=[]):
         getPositives(rest, acc)
         return acc #exitpoint from last operation in stack
 
-positives = [-10, 12, 3 , -4]
-result = getPositives(positives)
+numbers = [-10, 12, 3 , -4]
+result = getPositives(numbers)
 print(f'Only the positive vibes: {result}')
 
 # more recursion with python 

@@ -4,7 +4,7 @@ class Entity:
 
 class Person(Entity): # Person inherits Entity
     def __init__(self, firstName, lastName): # creator
-        self.firstName = firstName # atribute
+        self.firstName = firstName # attribute
         self.lastName = lastName
 
     def Say_Hello(self): # self is required arg
