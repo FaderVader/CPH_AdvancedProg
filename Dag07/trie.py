@@ -34,9 +34,9 @@ class SuffixTree:
         self.root    = root
 
     def add(self, string): 
-        root = Node([]);
+        root = Node([])
         for i, suff in reversed(suffixes(string)):
-            node = root;
+            node = root
             while suff:
                 (j, lcp) = node.lcp(suff)
                 if lcp:

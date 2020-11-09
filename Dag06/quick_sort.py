@@ -19,7 +19,7 @@ def quicksort(lst):
     lst_lower = []
     lst_higher = []
 
-    pivot = lst.pop()
+    pivot = lst.pop() # get the last item
     for item in lst:
         if item < pivot:
             lst_lower.append(item)
